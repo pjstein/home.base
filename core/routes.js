@@ -11,7 +11,7 @@
 const Launchpad = require('./controllers/launchpad').Launchpad;
 const React     = require('react');
 const Route     = require('react-router').Route;
-const App       = require('./components/app').App;
+const App       = require('./presentation/app').App;
 
 // Exports ---------------------------------------------------------------------
 module.exports = (

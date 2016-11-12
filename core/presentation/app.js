@@ -3,7 +3,7 @@
 // me@pjstein.co
 // home.base
 //
-// core/components/app.js
+// core/presentation/app.js
 //
 
 const React = require('react');
