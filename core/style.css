@@ -1,0 +1,422 @@
+/*
+* (c) 2016-XX, PJ$
+* me@pjstein.co
+* home.base
+*
+* core/style.css
+*
+*/
+
+/* Globals ------------------------------------------------------------------ */
+:root {
+  --body-gray : #4d4e4c;
+  --lt-gray   : #F8F8F8;
+  --m-gray    : #CCCCCC;
+  --dark-gray : #EFEFEF;
+  --shade     : #4A4A4A;
+  --r-width   : 480px;
+}
+
+* {
+  box-sizing            : border-box;
+  color                 : var(--body-gray);
+  -webkit-margin-before : 0;
+  -webkit-margin-after  : 0;
+  -webkit-margin-start  : 0;
+  -webkit-margin-end    : 0;
+  line-height           : 1;
+  margin-top            : 0;
+}
+
+body {
+  font-family :
+}
+
+a {
+  text-decoration : none;
+  cursor          : pointer;
+}
+
+/* Coloring ----------------------------------------------------------------- */
+.o70 {
+  opacity : 0.7;
+}
+
+.o40 {
+  opacity : 0.4;
+}
+
+.bk-p {
+  background: linear-gradient(to bottom right, #796DEE, #E68CF4);
+}
+
+.bk-g {
+  background-color : var(--lt-gray);
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .bk-g {
+    background-color : #fff;
+  }
+}
+
+.bk-dg {
+  background-color : var(--dark-gray);
+}
+
+.c-w {
+  color : #fff;
+}
+
+.s-l-b {
+  box-shadow : 0 0 10px 3px rgba(73, 73, 73, 0.35);
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .s-l-g {
+    box-shadow : -2px 0 10px 1px rgba(73, 73, 73, 0.35);
+  }
+}
+
+.b {
+  diplay : none
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .b {
+    width            : 100%;
+    height           : 1px;
+    background-color : var(--m-gray);
+  }
+}
+
+.g {
+  width            : 152px;
+  height           : 574px;
+  background-image : url(/assets/v.svg);
+  margin           : 60px auto;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .g {
+    max-width        : 739px;
+    width            : 100%;
+    max-height       : 113px;
+    min-height       : 60px;
+    background-image : url(/assets/h.svg);
+  }
+}
+
+.gn {
+  width            : 324px;
+  height           : 115px;
+  margin           : 0 auto;
+  background-image : url(/assets/95.v.svg);
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .gn {
+    background-image : url(/assets/95.h.svg);
+    height           : 252px;
+    width            : 216px;
+  }
+}
+
+/* Layout ------------------------------------------------------------------- */
+.mr {
+  position : relative;
+  width    : 100%;
+  z-index  : 1;
+  padding  : 30px 30px 45px 30px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .mr {
+    position   : fixed;
+    top        : 0;
+    right      : 0;
+    min-height : 100%;
+    padding    : 80px 60px;
+  }
+}
+
+.cf {
+  width    : 100%;
+  position : relative;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .cr {
+    width : var(--r-width);
+  }
+
+  .cl {
+    width : calc(100% - var(--r-width));
+  }
+}
+
+.c-flex {
+  display : block;
+}
+
+@media only screen
+and (min-width: 1000px) {
+    .c-flex {
+      display        : flex;
+      flex-direction : row;
+    }
+}
+
+.c-2 {
+  width   : 100%;
+  padding : 50px 0px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+    .c-2 {
+      wdith   : 50%;
+      padding : 70px 40px;
+    }
+
+    .c-2:first-child {
+      padding-left : 0;
+    }
+
+    .c-2:last-child {
+      padding-right : 0;
+    }
+}
+
+.ca {
+  position : relative;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .ca {
+    position : absolute;
+  }
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .ca-l {
+    left : 70px;
+  }
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .ca-r {
+    right : 70px;
+  }
+}
+
+.p-c {
+  padding : 30px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .p-c {
+    padding : 0px 66px;
+    maring  : 0 auto;
+  }
+}
+
+.p-b-30 {
+  padding-bottom : 30px;
+}
+
+.p-b-11 {
+  padding-bottom : 11px;
+}
+
+.p-b-6 {
+  padding-bottom : 6px;
+}
+
+.t {
+  padding-top    : 116px;
+  padding-left   : 0;
+  padding-right  : 0;
+  padding-bottom : 116px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .t {
+    padding-left   : 70px;
+    padding-right  : 300px;
+    padding-top    : 228px;
+    padding-bottom : 156px;
+  }
+}
+
+.l-il {
+  list-style-type: none;
+}
+
+.l-il > li {
+  display : inline;
+}
+
+/* Typography --------------------------------------------------------------- */
+.f-fac {
+  font-family : "factoria", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight : normal;
+}
+
+.f-lat {
+  font-family : "lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight : normal;
+}
+
+.f-lg {
+  font-family : "letter-gothic-std", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight : normal;
+}
+
+.f-u {
+  text-transform : uppercase;
+}
+
+.f-b {
+  font-weight : bold;
+}
+
+.f-C {
+  text-align : center;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .f-C {
+    text-align : left;
+  }
+}
+
+.f-72 {
+  font-size : 36px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .f-72 {
+    font-size : 72px;
+  }
+}
+
+.f-40 {
+  font-size   : 32px;
+  line-height : 36px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .f-40 {
+    font-size   : 40px;
+    line-height : 44px;
+  }
+}
+
+.f-22 {
+  font-size : 16px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .f-22 {
+    font-size : 22px;
+  }
+}
+
+.f-16 {
+  font-size   : 16px;
+  line-height : 22px;
+}
+
+.lh-68 {
+  line-height : 40px;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .lh-68 {
+    line-height : 68px;
+  }
+}
+
+/* Form --------------------------------------------------------------------- */
+.i {
+  background-position : 100% 35px;
+  background-repeat   : no-repeat;
+  background-size     : 15px 15px;
+  vertical-align      : middle;
+  padding-bottom      : 9px;
+  font-size           : 14px;
+  width               : 100%;
+  background-color    : transparent;
+  color               : black;
+  outline             : none;
+  outline-style       : none;
+  border-top          : none;
+  border-left         : none;
+  border-right        : none;
+  border-bottom       : solid #999999 1px;
+}
+
+.i:focus {
+  color         : #00BFFF;
+  border-bottom : solid #00BFFF 1px;
+}
+
+.ih {
+  padding-bottom : 23px;
+}
+
+.i2 {
+  width : 100%;
+}
+
+@media only screen
+and (min-width: 1000px) {
+  .i2 {
+    width   : 50%;
+    padding : 0 9px;
+  }
+
+  .i2:first-child {
+    padding-left : 0;
+  }
+
+  .i2:last-child {
+    padding-right : 0;
+  }
+}
+
+.button {
+  width            : 100px;
+  text-align       : center;
+  cursor           : pointer;
+  background-color : #00BFFF;
+  color            : white;
+  line-height      : 40px;
+}
+
+.button span {
+  display    : inline-block;
+  margin-top : 10px;
+}
+
+.button.locked {
+  background-color : #BBBBBB !important;
+}
